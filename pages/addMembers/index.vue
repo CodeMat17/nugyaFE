@@ -137,6 +137,7 @@
 <script>
 export default {
   name: "Add-Member",
+  middleware: 'superadmin',
   head() {
     return {
       title: "Add Member",

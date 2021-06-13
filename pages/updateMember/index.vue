@@ -87,6 +87,7 @@
 import { membersQuery } from "~/graphql/query";
 export default {
   name: "Admin-Panel",
+  middleware: 'superadmin',
   head() {
     return {
       title: "Admin Panel",

@@ -81,6 +81,7 @@
 <script>
 import { usersQuery } from "~/graphql/query";
 export default {
+    middleware: 'superadmin',
   data() {
     return {
       users: [],

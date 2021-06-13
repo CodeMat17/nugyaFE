@@ -8,7 +8,8 @@
           ADMIN PANEL
         </h1>
         <div class="mt-6 flex items-center justify-center space-x-6">
-          <n-link to="/addMembers"
+          <n-link
+            to="/addMembers"
             class="
               flex
               items-center
@@ -17,13 +18,15 @@
               h-32
               rounded-lg
               shadow-lg
-              px-4 text-center
-                bg-green-300
+              px-4
+              text-center
+              bg-green-300
             "
           >
             Add Member
           </n-link>
-          <n-link to="/updateMember"
+          <n-link
+            to="/updateMember"
             class="
               flex
               items-center
@@ -34,14 +37,15 @@
               rounded-lg
               shadow-lg
               text-center
-                bg-gray-300
+              bg-gray-300
             "
           >
             Update Member
           </n-link>
         </div>
         <div class="mt-8 flex items-center justify-center space-x-6">
-          <n-link to="/usersPage"
+          <n-link
+            to="/usersPage"
             class="
               flex
               items-center
@@ -50,13 +54,15 @@
               h-32
               rounded-lg
               shadow-lg
-              px-4 text-center
-                bg-gray-300
+              px-4
+              text-center
+              bg-gray-300
             "
           >
             Unblock Users
           </n-link>
-          <n-link to="/mails"
+          <n-link
+            to="/mails"
             class="
               flex
               items-center
@@ -66,15 +72,16 @@
               rounded-lg
               shadow-lg
               bg-green-300
-              px-4 text-center
+              px-4
+              text-center
             "
           >
-            <p>Ckeck Mails <span class="text-red-500">({{ mailCount }})</span></p>
+            <p>
+              Ckeck Mails <span class="text-red-500">({{ mailCount }})</span>
+            </p>
           </n-link>
         </div>
-     
       </div>
-
     </div>
   </div>
 </template>
@@ -82,6 +89,7 @@
 <script>
 export default {
   name: "Admin-Panel",
+  middleware: "superadmin",
   head() {
     return {
       title: "Admin Panel",

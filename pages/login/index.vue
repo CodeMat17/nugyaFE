@@ -89,6 +89,7 @@ export default {
       ],
     };
   },
+  middleware: 'authenticated',
   data() {
     return {
       showWarning: true,

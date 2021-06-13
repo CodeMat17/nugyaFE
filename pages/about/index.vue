@@ -78,5 +78,6 @@ export default {
       ],
     };
   },
+  middleware: 'authenticated',
 };
 </script>

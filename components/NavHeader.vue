@@ -77,6 +77,7 @@
             class="px-2 py-5 hover:bg-green-100 hover:text-green-600"
             >Admin</n-link
           >
+          <button @click="logout" class="px-2 py-1 rounded-lg bg-yellow-200 text-yellow-600 focus:outline-none focus:shadow-outline">LOGOUT</button>
         </div>
       </div>
     </div>
@@ -259,6 +260,25 @@
           >
             Admin
           </button>
+          <button
+            @click="logout"
+            class="
+              butts
+              w-full
+              text-left
+              px-4
+              py-2
+              block
+              focus:outline-none
+              focus:bg-green-100
+              hover:bg-green-100
+              uppercase
+              tracking-wider
+              font-semibold
+            "
+          >
+            Logout
+          </button>
           <div class="w-full text-center">
             <button @click="devButt" class="bg-blue-200 px-12 py-1 rounded-lg">
               <svg
@@ -325,6 +345,10 @@ export default {
     devButt() {
       this.$router.push("/dev");
       this.showMenu = false;
+    },
+     async logout() {
+      await this.$strapi.logout();
+      this.$nuxt.$router.push("/");
     },
   },
 };
