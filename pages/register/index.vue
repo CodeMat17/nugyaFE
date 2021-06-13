@@ -136,6 +136,7 @@
 <script>
 export default {
   name: "Register",
+   layout: "home",
   head() {
     return {
       title: "Register",

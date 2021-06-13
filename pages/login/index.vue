@@ -76,6 +76,7 @@
 <script>
 export default {
   name: 'Login',
+   layout: "home",
     head() {
     return {
       title: "Login",
