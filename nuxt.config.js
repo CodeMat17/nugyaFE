@@ -51,46 +51,45 @@ export default {
         '@nuxtjs/markdownit',
         '@nuxtjs/strapi',
         '@nuxtjs/toast',
-        '@nuxtjs/pwa'
     ],
 
-    pwa: {
-        meta: {
-            title: 'NUGYA',
-            author: 'Matthew',
-        },
-        manifest: {
-            name: 'NUGYA',
-            short_name: 'NUGYA',
-            lang: 'en',
-            display: 'standalone',
-            theme_color: '#000',
-        },
-        workbox: {
-            runtimeCaching: [{
-                    urlPattern: 'https://fonts.googleapis.com/.*',
-                    handler: 'cacheFirst',
-                    method: 'GET',
-                    strategyOptions: { cacheableResponse: { statuses: [0, 200] } },
+    // pwa: {
+    //     meta: {
+    //         title: 'NUGYA',
+    //         author: 'Matthew',
+    //     },
+    //     manifest: {
+    //         name: 'NUGYA',
+    //         short_name: 'NUGYA',
+    //         lang: 'en',
+    //         display: 'standalone',
+    //         theme_color: '#000',
+    //     },
+    //     workbox: {
+    //         runtimeCaching: [{
+    //                 urlPattern: 'https://fonts.googleapis.com/.*',
+    //                 handler: 'cacheFirst',
+    //                 method: 'GET',
+    //                 strategyOptions: { cacheableResponse: { statuses: [0, 200] } },
 
-                },
-                {
-                    urlPattern: 'https://fonts.gstatic.com/.*',
-                    handler: 'cacheFirst',
-                    method: 'GET',
-                    strategyOptions: { cacheableResponse: { statuses: [0, 200] } },
+    //             },
+    //             {
+    //                 urlPattern: 'https://fonts.gstatic.com/.*',
+    //                 handler: 'cacheFirst',
+    //                 method: 'GET',
+    //                 strategyOptions: { cacheableResponse: { statuses: [0, 200] } },
 
-                },
-                {
-                    urlPattern: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
-                    handler: 'cacheFirst',
-                    method: 'GET',
-                    strategyOptions: { cacheableResponse: { statuses: [0, 200] } },
+    //             },
+    //             {
+    //                 urlPattern: 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
+    //                 handler: 'cacheFirst',
+    //                 method: 'GET',
+    //                 strategyOptions: { cacheableResponse: { statuses: [0, 200] } },
 
-                }
-            ]
-        }
-    },
+    //             }
+    //         ]
+    //     }
+    // },
 
     strapi: {
         url: process.env.STRAPI_URL || 'http://localhost:1337',
