@@ -127,7 +127,7 @@
 import { messagesQuery } from "~/graphql/query";
 export default {
   name: "Admin-Panel",
-  middleware: 'superadmin',
+  // middleware: 'superadmin',
   head() {
     return {
       title: "Admin Panel",

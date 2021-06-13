@@ -2,13 +2,33 @@
   <div class="w-full min-h-screen bg-green-100">
     <div class="max-w-xl mx-auto px-2 py-8">
       <div class="my-4 py-2">
-          <div class="pb-4 flex justify-end">
-              <button @click="$router.back()" class="bg-green-200 rounded-full shadow-lg px-6 py-2 focus:outline-none focus:shadow-outline">Back</button>
-          </div>
-        <div
-          class="p-3 mb-6 bg-green-200 shadow-xl rounded-lg"
-        >
-          <h1 class="text-center text-lg tracking-wide font-semibold text-gray-800">ADD MEMBER:</h1>
+        <div class="pb-4 flex justify-end">
+          <button
+            @click="$router.back()"
+            class="
+              bg-green-200
+              rounded-full
+              shadow-lg
+              px-6
+              py-2
+              focus:outline-none
+              focus:shadow-outline
+            "
+          >
+            Back
+          </button>
+        </div>
+        <div class="p-3 mb-6 bg-green-200 shadow-xl rounded-lg">
+          <h1
+            class="
+              text-center text-lg
+              tracking-wide
+              font-semibold
+              text-gray-800
+            "
+          >
+            ADD MEMBER:
+          </h1>
           <form @submit.prevent="createMember" class="mt-4 space-y-4">
             <div
               v-if="error"
@@ -137,7 +157,6 @@
 <script>
 export default {
   name: "Add-Member",
-  middleware: 'superadmin',
   head() {
     return {
       title: "Add Member",
@@ -161,7 +180,6 @@ export default {
       occupation: "",
       error: "",
       creating: false,
-    
     };
   },
   methods: {
@@ -183,6 +201,12 @@ export default {
           position: "top-center",
           duration: 7000,
         });
+        this.name = "";
+        this.email = "";
+        this.phone = "";
+        this.family = "";
+        this.village = "";
+        this.occupation = "";
       } catch (error) {
         this.creating = false;
         this.error = error.message;
