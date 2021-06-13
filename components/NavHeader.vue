@@ -72,11 +72,11 @@
             class="px-2 py-5 hover:bg-green-100 hover:text-green-600"
             >Contact Us</n-link
           >
-          <n-link
+          <!-- <n-link
             to="/admin-login"
             class="px-2 py-5 hover:bg-green-100 hover:text-green-600"
             >Admin</n-link
-          >
+          > -->
           <button @click="logout" class="px-2 py-1 rounded-lg bg-yellow-200 text-yellow-600 focus:outline-none focus:shadow-outline">LOGOUT</button>
         </div>
       </div>
@@ -241,7 +241,7 @@
           >
             Contact US
           </button>
-          <button
+          <!-- <button
             @click="adminButt"
             class="
               butts
@@ -259,7 +259,7 @@
             "
           >
             Admin
-          </button>
+          </button> -->
           <button
             @click="logout"
             class="
