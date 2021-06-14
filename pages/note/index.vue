@@ -9,7 +9,7 @@
             WARNING!!!
           </h1>
           <p class="mt-4 tracking-wide">
-            Please be notified that you Must be an indigene of NOMEH UNATEZE to
+            Please be notified that you <span class="font-semibold">MUST</span>  be an indigene of NOMEH UNATEZE to
             view certain pages of this application and to perform some other
             actions required thereof.
           </p>
