@@ -57,7 +57,7 @@
         >
           {{ error }}
         </p>
-        
+
         <p
           v-if="userError"
           class="text-center text-red-500 bg-red-100 p-4 rounded-lg"
@@ -95,7 +95,7 @@ export default {
           this.password = "";
           this.loggin = false;
           if (adminUser.user.satoken) {
-            this.$nuxt.$router.push("/adminPanel");
+            this.$nuxt.$router.push("/adminPanelSAToken");
           } else {
             this.userError = "You are not a super admin, please quit now.";
           }

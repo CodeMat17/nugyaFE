@@ -89,7 +89,7 @@
 <script>
 export default {
   name: "Admin-Panel",
-  middleware: "superadmin",
+  // middleware: "superadmin",
   head() {
     return {
       title: "Admin Panel",
