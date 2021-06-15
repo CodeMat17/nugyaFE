@@ -30,7 +30,7 @@
               type="button"
               class="
                 focus:outline-none
-                border
+                border-2
                 shadow-xl
                 bg-gray-100
                 p-2
@@ -132,6 +132,7 @@ export default {
           this.email = "";
           this.password = "";
           this.loggin = false;
+          // console.log('user: ', adminUser.user)
           if (adminUser.user.satoken) {
             this.$nuxt.$router.push("/adminPanelSAToken");
           } else {

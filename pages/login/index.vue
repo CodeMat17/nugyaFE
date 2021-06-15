@@ -53,12 +53,12 @@
                 required
                 v-model="password"
                 placeholder="Your Password"
-                class="w-full rounded-md shadow-xl"
+                class="w-full border rounded-md shadow-xl"
               />
               <button
               @click="showPassword = !showPassword"
                 type="button"
-                class="focus:outline-none border shadow-xl bg-gray-100 p-1 mx-1 rounded-md"
+                class="focus:outline-none border-2 shadow-xl bg-gray-100 p-1 mx-1 rounded-md"
               >
                 <svg class="w-8 h-8 mx-2" viewBox="0 0 24 24">
                   <path
